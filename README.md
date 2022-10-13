@@ -1,9 +1,18 @@
 # Street Trees of Berlin
 
+Straßen- und Anlagebäume Berlins. Stand: 11.05.2021 // Berlin tree register.
 
-This application displays the New York City [2015 Street Tree Census](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh), conducted by volunteers and staff organized by NYC Parks & Recreation and partner organizations. Tree data collected includes tree species, diameter and perception of health. Accompanying blockface data is available indicating status of data collection and data release citywide.  The application allows for dynamic filtering by tree species and diameter, and additionally we calculate summary information about the biggest tree, most common type, and average size for an area of interest defined either interactively or by street address.
+Darstellung der Straßenbäume und eines Teils der Bäume in Grünanlagen.
 
-> Data provided by Department of Parks and Recreation (DRP) via the [NYC OpenData](https://opendata.cityofnewyork.us/) portal.
+Datengrundlage: Meldung des Baumbestandes durch die bezirklichen Straßen- und Grünflächenämter. Datengrundlage: GRIS Berlin (Grünflächeninformations- und -managementsystem)
+
+
+Quelle: Geoportal Berlin
+
+Verarbeitungsprozesse: WFS "Straßenbäume" und "Anlagenbäume" wurden in ArcGIS Pro importiert, Layer zusammengeführt, Attribut "Kategorie" erstellt, nach Web Mercator projiziert und als Web Layer in ArcGIS Online veröffentlicht.
+
+
+> [Learn more here...](https://hub.arcgis.com/datasets/esri-de-content::baumkataster-berlin/about)
 
 
 ### The APIs
