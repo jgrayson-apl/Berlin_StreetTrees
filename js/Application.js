@@ -286,7 +286,7 @@ class Application extends AppBase {
 
             treeTypeLayerView.featureEffect = {
               filter: {where: filters.join(' AND ')},
-              excludedEffect: 'opacity(0.3) blur(5px)'
+              excludedEffect: 'opacity(0.2) blur(2px)'
             };
 
             this._evented.emit('filter-by-type-change', {});
