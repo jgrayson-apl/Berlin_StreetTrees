@@ -26,7 +26,7 @@ class Application extends AppBase {
   CM_TO_METERS = 0.1;
 
   // FORMAT TREE SIZE - NOW IN METERS //
-  sizeFormatter = new Intl.NumberFormat('default', {minimumFractionDigits: 1, maximumFractionDigits: 1});
+  sizeFormatter = new Intl.NumberFormat('default', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
   constructor() {
     super();
