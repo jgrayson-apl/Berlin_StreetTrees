@@ -270,7 +270,7 @@ class Application extends AppBase {
             max: diameterMax,
             values: [diameterMin, diameterMax],
             labelFormatFunction: (value, type) => {
-              return `${this.sizeFormatter.format(value * this.CM_TO_METERS)} m`;
+              return `${ this.sizeFormatter.format(value * this.CM_TO_METERS) } m`;
             },
             barCreatedFunction: (index, element) => {
               element.setAttribute("stroke-width", "0.8");
@@ -583,7 +583,7 @@ class Application extends AppBase {
 
                 summaryBiggestTypeLabel.innerHTML = treeSpecies;
                 summaryBiggestAddressLabel.innerHTML = treeAddress;
-                summaryBiggestSizeLabel.innerHTML = treeDiameter;
+                summaryBiggestSizeLabel.innerHTML = `${ treeDiameter } m`;
 
                 biggestGraphic.geometry = biggestTree.geometry;
 
@@ -655,7 +655,7 @@ class Application extends AppBase {
             });
             return treeTypeLayerView.queryFeatures(summaryQuery).then(summaryFS => {
               const stats = summaryFS.features[0].attributes;
-              summaryAvgSizeLabel.innerHTML = (stats.AvgTreeSize != null) ? this.sizeFormatter.format(stats.AvgTreeSize * this.CM_TO_METERS) : '';
+              summaryAvgSizeLabel.innerHTML = (stats.AvgTreeSize != null) ? `${ this.sizeFormatter.format(stats.AvgTreeSize * this.CM_TO_METERS) } m` : '';
             });
 
           } else {
