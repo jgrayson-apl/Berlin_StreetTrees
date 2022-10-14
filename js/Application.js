@@ -371,6 +371,7 @@ class Application extends AppBase {
 
             disableTreeTypeList(true);
             histogramResetBtn.toggleAttribute('disabled', true);
+            view.focus();
 
             isAnimating = true;
             requestAnimationFrame(animateBins);
@@ -387,6 +388,7 @@ class Application extends AppBase {
 
             disableTreeTypeList(false);
             histogramResetBtn.toggleAttribute('disabled', false);
+            view.focus();
           };
 
           const histogramPlayFBtn = document.getElementById('histogram-play-f-btn');
